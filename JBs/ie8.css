@@ -1,0 +1,15 @@
+input#searchbar {
+    line-height:3em;
+}
+
+#buy input.add_to_cart_quantity {
+    line-height:1.5em;
+}
+
+table.list_container td {
+    white-space:normal;
+}
+
+#searchdiv {
+    height:115px;
+}

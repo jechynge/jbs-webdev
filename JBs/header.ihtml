@@ -1,0 +1,294 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <title>{TITLE}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    
+    <style type='text/css'>
+        @font-face {
+            font-family: leaguegothic;
+            src: url('{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/leaguegothic.eot');
+        }
+        
+        @font-face {
+            font-family: futuraextrablackob;
+            src: url('{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/futuraextrablackob.eot');
+        }
+        
+        @font-face {
+            font-family: futuraextrablack;
+            src: url('{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/futuraextrablack.eot');
+        }
+        
+    </style>
+    
+    <link rel="stylesheet" type="text/css" href="{PAGE_CSS}" />
+    <link rel="stylesheet" type="text/css" href="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/fonts.css" />
+    
+    <!--[if IE 7]>
+    <link rel="stylesheet" type="text/css" href="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/ie7.css" />
+    <![endif]-->
+    
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/ie8.css" />
+    <![endif]-->
+    
+    {JAVASCRIPT}
+    {META_TAGS}
+    
+	<script src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/js/carouFredSel.js"></script>
+	
+	<!--fade large logo out on scroll-->
+	<script type="text/javascript">
+		$(window).scroll(function(){
+   			if($(window).scrollTop()<=50){
+        		$('#logo500pxwrapper').stop(true,true).fadeIn(400);}
+        	else {
+        		$('#logo500pxwrapper').stop(true,true).fadeOut(400);}
+		});
+	</script>
+	
+	<!--fade small logo in on scroll-->
+	<script type="text/javascript">
+		$(window).scroll(function(){
+			$('#logo95pxwrapper').hide();
+   			if($(window).scrollTop()<=50){
+        		$('#logo95pxwrapper').stop(true,true).fadeOut(400);}
+        	else if($(window).scrollTop()>=200){
+        		$('#logo95pxwrapper').show();}
+        	else{
+        		$('#logo95pxwrapper').stop(true,true).fadeIn(400);}
+		});
+	</script>
+	
+	<script>
+	//logo slideshow
+	$(document).ready(function() {
+		$('#slideshow').carouFredSel({
+			height: 221,
+			auto: {
+				button: "#slideplay",
+			},
+			prev: "#slideright",
+			next: "#slideleft",
+			scroll: {
+				fx: "crossfade",
+				easing: "quadratic",
+				duration: 1200,
+				pauseOnHover: true
+			}
+		});
+	});
+	</script>
+    
+    <script type="text/javascript">
+        
+        var searchBoxCleared = false;
+        
+        function clearSearchBox() {
+            if (searchBoxCleared) {
+                return;
+            }
+            
+            document.getElementById("searchbar").value = "";
+            
+            searchBoxCleared = true;
+        }
+    </script>
+</head>
+
+<body {BODY_OPTIONS}>
+    
+    <!-- Top Nav Menu -->
+
+    <div id="navwrapper">
+        <div id="navlogo"><span id="logo95pxwrapper"><a href="/"><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/logo95px.png" /></a></span></div>
+        <div id="listwrapper">
+            <ul id="topnav">
+                <li><span class='link'><a href='/inet/storefront/store.php?mode=browsecategory&department=26'>big rigs</a></span></li>
+                <li><span class='link'><a href='/inet/storefront/store.php?mode=browsecategory&department=13'>programmers</a></span></li>
+                <li><span class='link'><a href='/inet/storefront/store.php?mode=browsecategory&department=12'>racing</a></span></li>
+                <li><span class='link'><a href='/inet/storefront/store.php?mode=browsecategory&department=04'>car audio</a></span></li>
+                <li><span class='link'><a href='/inet/storefront/store.php?mode=browsecategory&department=17'>remote starters</a></span></li>
+                <li id="dropdown" style="text-align:left;"><span class='link' style="display:block;text-align:center;">about jb's</span>
+                    <ul>
+                        <li><a href="#aboutjbs">about us</a></li>
+                        <li><a href="#contactjbs">contact</a></li>
+                        <li><a href="#jbscareers">careers</a></li>
+                        <li><a href='http://jbspowercenter.activeboard.com'>forum</a></li>
+                    </ul>	
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- /Top Nav Menu -->
+    <!-- Page Container -->
+    
+    <div id="container" class="clearfix">
+        
+        <div id="logo">
+            <span id="logo500pxwrapper">
+                <a href="/">
+                    <img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/logo500px.png" alt="jb's power source: canada's number one source for aftermarket performance parts!" />
+                </a>
+                <br />
+                <p class="logo">Canada's number one source for performance parts!</p>
+            </span>
+        </div>
+        <div id="slidecontainer">
+            <ul id="slideshow">
+                <li><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/slideshow/1.jpg" /></li>
+                <li><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/slideshow/2.jpg" /></li>
+                <li><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/slideshow/3.jpg" /></li>
+            </ul>
+            <div id="slidecontrolswrapper">
+                <ul id="slidecontrols">
+                    <li id="slideplay"><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/btnpause.png" /></li>
+                    <li id="slideright"><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/btnplayright.png" /></li>
+                    <li id="slideleft"><img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/btnleft.png" /></li>
+                </ul>
+            </div>
+        </div><!-- #header-->
+        
+        <!-- Search -->
+        
+        <div id="searchdiv">
+            <h2>search JB's</h2>
+            <div id="search">
+                <form name="search" method="GET" action="/inet/storefront/store.php">
+					<input type="hidden" name="mode" value="searchstore" />
+                    <input type="submit" class="solid" value="Search" />
+                    <input type="search" name="search[searchfor]" results=5 id="searchbar" class="searchinput" value="search by name, sku, or keyword" onfocus="javascript:clearSearchBox();"/>  
+                </form>
+            </div>
+        </div>
+        
+        <!-- /Search -->
+        <!-- Page Content -->
+        
+        <div class="content">
+            <div class="lower-content clear">
+                
+                <!-- Sidebar -->
+                
+                <div class="sidebar" id="menuboxes">
+                    {MENUBOXES}{STORE_MENUBOX}{CATEGORY_MENUBOX}{LIST_MENUBOX}
+                </div>
+                
+                <!-- /Sidebar -->
+                
+                <div class="main-wrapper">
+                    <div class="gradient-heading">
+                        <h2 class="heading">{TITLE}</h2>
+                    </div>
+                    <div class="page-data">
+                        {PAGEDATA}<br/>
+                        <div class="clear">&nbsp;</div>
+                    </div><!-- /.page-data -->
+                </div><!-- .main-wrapper -->
+            </div><!-- .lower-content -->
+        </div>
+        
+        <!-- /Page Content -->
+        
+    </div>
+    
+    <!-- /Page Container -->
+    <!-- Bottom Container -->
+    
+    <div id="bottomcontainer">
+        <div id="bottom" class="clearfix">
+            <div id="aboutcontactcareercontainer">
+                <div id="aboutjbs" class="bottomcol">
+                    <span class="h7">about jb's</span>
+                    <span class="h8">OUR HISTORY</span>
+                    
+                    <p>In 1966 JB's Power Centre was founded by Jim Bell as a small speed shop in Edmonton, Alberta. Today it has grown into one of Canada's largest performance companies that includes 3 retail stores, a 60,000 sq ft warehouse, mail order and an e-commerce store.</p>
+                    <p>JBs Power Centre specializes in high performance automotive, diesel performance, truck accessories, car audio and car starters. We invite you to visit any of our retail branches. </p>
+                    
+                    <span class="h8">YOUR CAR AUDIO HEADQUARTERS</span>
+                    
+                    <p>JBs Power Centre is your source for your car audio needs. We carry the top brand names such as Rockford Fosgate, Kenwood, Boston Acoustics, JVC, Audison, Hertz, Pioneer, and Ultimate.</p>
+                    <p>Professional installation services are offered at all of our retail locations to ensure your car audio system is working properly.</p>
+                    
+                    <span class="h8">SUPPORTING THE COMMUNITY</span>
+                    
+                    <p>We are proud to be a locally owned and operated business based in Edmonton, Alberta.</p>
+                    <p>For over 30 years drag racing has been a passion of Jim Bell's. JBs Power Centre is proud to support the Friday Night Street legal's at Castrol Raceway and to be the title sponsor in the NHRDA Canadian Nationals Diesel Drag Race.</p>
+                    <p>We believe in giving back to the communities that we operate in. JBs Power Centre is proud to annually support both Adopt A Teen and the Make a Wish Foundation in an effort to help the less fortunate</p>
+                </div>
+                <div id="contactjbs" class="bottomcol">
+                    <span class="h7">contact us</span>
+                    <span class="h8">edmonton</span>
+                    <div class="maps">
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps/ms?msa=0&amp;msid=212670691186029481487.0004d11a189a9d253ce1c&amp;ie=UTF8&amp;t=m&amp;ll=53.582315,-113.529968&amp;spn=0.142674,0.291824&amp;z=11&amp;output=embed"></iframe><br />
+                    </div>
+                    <span class="h8">JB's EDMONTON WEST</span>
+                    <p>11680 170 Street<br/>
+                    Edmonton, Alberta<br/>
+                    (780) 489-6663</p>
+                    
+                    <strong>STORE HOURS</strong>
+                    <p>Monday - Wednesday: 9am - 6pm<br />
+                    Thursday - Friday: 9am - 9pm<br />
+                    Saturday: 9am - 5:30pm<br />
+                    Sunday: 11am - 5pm<br />
+                    <br />
+                    <strong>INSTALLATION AVAILABLE</strong></p>
+                    
+                    <span class="h8">JB'S EDMONTON EAST</span>
+                    <p>13528 FORT ROAD<br />
+                    Edmonton, Alberta<br />
+                    (780) 406-7030</p>
+                    
+                    <strong>STORE HOURS</strong>
+                    <p>Monday - Wednesday: 9am - 6pm<br />
+                    Thursday - Friday: 9am - 9pm<br />
+                    Saturday: 9am - 5:30pm<br />
+                    Sunday: 11am - 5pm<br />
+                    <br />
+                    <strong>INSTALLATION AVAILABLE</strong></p>
+                    <span class="h8">calgary</span>
+                    <div class="maps">
+                        <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps/ms?msa=0&amp;msid=212670691186029481487.0004d11a189a9d253ce1c&amp;ie=UTF8&amp;t=m&amp;ll=51.098348,-114.005127&amp;spn=0.150921,0.291824&amp;z=11&amp;output=embed"></iframe><br />
+                    </div>
+                    <span class="h8">JB'S CALGARY NORTH</span>
+                    <p>2245 Pegasus Road N.E.<br />
+                    Calgary, Alberta<br />
+                    (403) 520-7658</p>
+                    
+                    <strong>STORE HOURS</strong>
+                    <p>Monday - Friday: 9am - 6pm<br />
+                    Saturday: 9am - 5:30pm<br />
+                    Sunday: 11am - 5pm<br />
+                    <br />
+                    <strong>INSTALLATION AVAILABLE</strong></p>
+                </div>
+                <div id="jbscareers" class="bottomcol">
+                    <span class="h7">careers</span>
+                    <img src="{SAGRO_BASE}/styles/{SITE_TEMPLATE_ID}/img/nowhiring.png" width="385" />
+                    <span class="h8">join the team at Canada's largest performance parts retailer!</span>
+                    <p>We have immediate openings in both our <strong>SALES</strong> and <strong>INSTALLATION</strong> departments! We have a <strong>WELL-ABOVE-AVERAGE</strong> pay structure and an <strong>EXCELLENT BENEFITS PROGRAM!</strong><br />Please submit your resume by email to <a href="mailto:careers@jbspowercenter.com">careers@jbspowercenter.com</a>, by fax to<br />780-466-5537, or in person at any JB's location!</p>
+                    <span class="h8">SALES POSITIONS</span>
+                    <ul>
+                        <li>sales experience an asset</li>
+                        <li>performance part and/or car audio knowledge an asset</li>
+                    </ul>
+                    <span class="h8">INSTALLATION POSITIONS</span>
+                    <ul>
+                        <li>12-volt car stereo</li>
+                        <li>remote starters</li>
+                        <li>truck accessories</li>
+                        <li>experience an asset</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="copywrapper"><span class="copyright"><strong>� 2013 JB's Power Centre Ltd</strong></span></div>
+    </div>
+    <!-- /Bottom Container -->
+    
+</body>
+</html>

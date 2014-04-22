@@ -1,0 +1,11 @@
+<!-- Side Menu -->
+<div class="leftmenu"  id="{MENUBOX_ID}">
+  <h2 class="heading">{MENUBOX_TITLE}</h2>
+  <div id="categoriescontainer" class="categories">   
+    <ul class="tree">
+      {MENUBOX_LINKS}               
+    </ul>
+    <div class="menubox-data">{MENUBOX_DATA}</div>
+  </div>
+</div>
+<!-- Side Menu -->

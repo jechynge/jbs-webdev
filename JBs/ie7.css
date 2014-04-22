@@ -1,0 +1,32 @@
+input#searchbar {
+    width:333px;
+    line-height:3em;
+}
+
+input.smallbutton {
+    padding:3px 0 !important;
+}
+
+
+#buy button.add_to_cart_button {
+    height:100%;
+}
+
+
+#buy input.add_to_cart_quantity {
+    line-height:1.5em;
+}
+
+
+.inventory h4 {
+    float:left;
+    margin-left:2px !important;
+}
+
+table.list_container td {
+    white-space:normal;
+}
+
+#searchdiv {
+    height:115px;
+}
